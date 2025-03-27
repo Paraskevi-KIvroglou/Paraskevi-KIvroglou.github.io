@@ -8,15 +8,17 @@
     <meta name="author" content="Paraskevi Kivroglou">
     <title>Tech & AI Podcast | Paraskevi Kivroglou</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-brand">Paraskevi Kivroglou</div>
+            <a href="index.html" class="nav-brand-link">
+                <div class="nav-brand">Paraskevi Kivroglou</div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="podcast.html" class="active">Podcast</a></li>
             </ul>
         </nav>
@@ -25,10 +27,20 @@
     <main>
         <section class="section">
             <div class="container">
-                <h1>My Podcast</h1>
+                <h1>Tech Break by Friday</h1>
                 <div class="podcast-content">
                     <div class="podcast-info">
-                        <h2><i class="fas fa-microphone-alt"></i> About the Podcast</h2>
+                        <div class="podcast-header">
+                            <div class="podcast-logo-container">
+                                <div class="podcast-logo-background"></div>
+                                <img src="photos/podcast-logo.jpg" alt="Tech Break by Friday Podcast Logo" class="podcast-logo">
+                            </div>
+                            <div class="podcast-title">
+                                <h2><i class="fas fa-microphone"></i> About the Podcast</h2>
+                                <p class="podcast-tagline">Tech Break by Friday - Weekly tech insights and conversations</p>
+                            </div>
+                        </div>
+                        
                         <p>Hey there! I'm Paraskevi (fun fact: my name means "Friday" in Greek 🌟), and welcome to 
                            "Tech Break by Friday" - where we explore the fascinating world of technology together!</p>
                         
@@ -54,7 +66,7 @@
                         <div class="platform-links">
                             <a href="https://open.spotify.com/show/3c6KAQPQ54vxXUvLLRffC1" class="platform-button"><i class="fab fa-spotify"></i> Spotify</a>
                             <a href="https://podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716" class="platform-button"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                            <a href="https://www.youtube.com/playlist?list=PLALVPKVJpHyA652RZBwAN68O9w2OoA8f5" class="platform-button"><i class="fas fa-podcast"></i> Google Podcasts</a>
+                            <a href="https://www.youtube.com/playlist?list=PLALVPKVJpHyA652RZBwAN68O9w2OoA8f5" class="platform-button"><i class="fab fa-google-play"></i> Google Podcasts</a>
                         </div>
                     </div>
 
@@ -73,9 +85,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/Paraskevi-KIvroglou"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile"><i class="fab fa-x-twitter"></i></a>
             </div>
             <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
         </div>

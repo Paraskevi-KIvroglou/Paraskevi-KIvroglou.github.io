@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Paraskevi Kivroglou's portfolio of AI and software development projects spanning machine learning, algorithm optimization, and more.">
+    <meta name="keywords" content="AI Projects, Software Development, Machine Learning, Portfolio, Python Projects">
+    <meta name="author" content="Paraskevi Kivroglou">
+    <title>Projects | Paraskevi Kivroglou</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand-link">
+                <div class="nav-brand">Paraskevi Kivroglou</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Portfolio Projects</h1>
+                
+                <div class="project-categories">
+                    <button class="category-filter active" data-category="all">All Projects</button>
+                    <button class="category-filter" data-category="ai">AI & ML</button>
+                    <button class="category-filter" data-category="fullstack">Full Stack</button>
+                    <button class="category-filter" data-category="cloud">Cloud & Architecture</button>
+                </div>
+                
+                <div class="projects-extended-grid">
+                    <!-- Featured Projects -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-badge">Featured</div>
+                        <h3><i class="far fa-microchip"></i> AI Hotel Booking Assistant</h3>
+                        <p>Developed a Llama 2-based AI assistant using Docker, and HuggingFace, 
+                           demonstrating practical applications of NLP in the hospitality sector.</p>
+                        <div class="tech-stack">
+                            <span>NLP</span>
+                            <span>Docker</span>
+                            <span>HuggingFace</span>
+                        </div>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App" class="button">View Project</a>
+                    </div>
+                    
+                    <div class="project-card" data-category="ai">
+                        <div class="project-badge">Featured</div>
+                        <h3><i class="fas fa-cogs"></i> Pong AI with Deep Q-Learning</h3>
+                        <p>Implemented neural networks for game AI using PyTorch, showcasing advanced 
+                           reinforcement learning techniques.</p>
+                        <div class="tech-stack">
+                            <span>PyTorch</span>
+                            <span>Q-Learning</span>
+                            <span>Game AI</span>
+                        </div>
+                        <a href="https://github.com/Paraskevi-KIvroglou/rl-pong-agent" class="button">View Project</a>
+                    </div>
+                    
+                    <div class="project-card" data-category="ai fullstack">
+                        <div class="project-badge">Featured</div>
+                        <h3><i class="fas fa-database"></i> Finance RAG Implementation</h3>
+                        <p>Built a Retrieval Augmented Generation system for financial due diligence using 
+                           GEMMA and Llama models.</p>
+                        <div class="tech-stack">
+                            <span>RAG</span>
+                            <span>LLM</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation" class="button">View Project</a>
+                    </div>
+                    
+                    <!-- Additional Projects -->
+                    <!-- <div class="project-card" data-category="cloud ai">
+                        <h3><i class="fas fa-cloud"></i> Cloud-Based AI Pipeline</h3>
+                        <p>Designed and implemented a scalable AI model training and deployment pipeline using AWS services.</p>
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>MLOps</span>
+                        </div>
+                        <a href="#" class="button">View Project</a>
+                    </div> -->
+                    
+                    <!-- <div class="project-card" data-category="fullstack">
+                        <h3><i class="fas fa-laptop-code"></i> E-Commerce Platform</h3>
+                        <p>Built a responsive e-commerce platform with secure payment processing and inventory management.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="button">View Project</a>
+                    </div> -->
+                    
+                    <!-- <div class="project-card" data-category="ai">
+                        <h3><i class="fas fa-brain"></i> Medical Image Classification</h3>
+                        <p>Implemented a deep learning model for classifying medical images to assist in early diagnosis.</p>
+                        <div class="tech-stack">
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                            <span>Medical AI</span>
+                        </div>
+                        <a href="#" class="button">View Project</a>
+                    </div> -->
+                    
+                    <div class="project-card" data-category="ai fullstack cloud">
+                        <h3><i class="fas fa-comments"></i> Chatbot App with AWS Endpoint</h3>
+                        <p>Developed an interactive AI-powered chatbot platform using AWS Lambda and API Gateway. 
+                           This web application features real-time responses, message history for context-aware 
+                           interactions, and a responsive design that adapts to different devices.</p>
+                        <div class="project-details">
+                            <ul>
+                                <li>Built with Python, Streamlit for the frontend, AWS services for backend</li>
+                                <li>Implemented serverless architecture using AWS Lambda for scalability</li>
+                                <li>Used LangChain framework for advanced LLM capabilities</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span>AWS</span>
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>LangChain</span>
+                            <span>Boto3</span>
+                        </div>
+                        <a href="https://github.com/Paraskevi-KIvroglou/chatbot-app-aws-endpoint" class="button">View Project</a>
+                    </div>
+                    
+                    <!-- <div class="project-card" data-category="ai fullstack">
+                        <h3><i class="fas fa-chart-bar"></i> Sentiment Analysis Tool</h3>
+                        <p>Developed a web application that performs sentiment analysis on social media data and news articles.</p>
+                        <div class="tech-stack">
+                            <span>BERT</span>
+                            <span>Python</span>
+                            <span>Flask</span>
+                        </div>
+                        <a href="#" class="button">View Project</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="projects.js"></script>
+</body>
+</html> 

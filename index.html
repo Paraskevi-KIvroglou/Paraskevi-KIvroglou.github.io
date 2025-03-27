@@ -14,10 +14,14 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="nav-brand">Paraskevi Kivroglou</div>
+            <a href="index.html" class="nav-brand-link">
+                <div class="nav-brand">
+                    <span class="brand-name">Paraskevi Kivroglou</span>
+                </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
             </ul>
         </nav>
@@ -26,28 +30,28 @@
     <main>
         <section id="about" class="section">
             <div class="container">
-                <h1><i class="fas fa-hand-wave"></i> Hey there! Come Get to Know Me <i class="fas fa-smile"></i></h1>
+                <h1>Professional Software Development & AI Solutions</h1>
                 <div class="about-content">
                     <img src="photos/ME.jpg" alt="Paraskevi Kivroglou" class="profile-img">
                     <div class="about-text">
-                        <h2><i class="fas fa-code"></i> About Me</h2>
+                        <h2><i class="fas fa-terminal"></i> About Me</h2>
                         <p>Hello! I'm Paraskevi Kivroglou, a Software Developer at inuTech GmbH with a passion for Artificial Intelligence 
                            and Mathematics. Currently pursuing my M.Sc. in Artificial Intelligence at the International University of 
                            Applied Sciences in Berlin, I combine my mathematical background with cutting-edge AI technologies to create 
                            innovative solutions.</p>
                         
-                        <p><i class="fas fa-rocket"></i> My expertise spans full-stack development, AI systems, and algorithm optimization. I'm particularly interested 
+                        <p><i class="fas fa-chevron-right"></i> My expertise spans full-stack development, AI systems, and algorithm optimization. I'm particularly interested 
                            in Natural Language Processing, Computer Vision, and multi-agent systems. Whether it's developing AI-powered 
                            applications or optimizing engineering calculations, I'm driven by the challenge of solving complex problems 
                            through technology.</p>
 
                         <div class="skills-section">
-                            <h3><i class="fas fa-star"></i> Core Competencies</h3>
+                            <h3><i class="fas fa-cubes"></i> Core Competencies</h3>
                             <div class="skills-grid">
                                 <div class="skill-category">
                                     <span><i class="fas fa-brain"></i> AI & ML</span>
-                                    <span><i class="fas fa-laptop-code"></i> Full-Stack Development</span>
-                                    <span><i class="fas fa-cloud"></i> Cloud Architecture</span>
+                                    <span><i class="fas fa-code"></i> Full-Stack Development</span>
+                                    <span><i class="fas fa-server"></i> Cloud Architecture</span>
                                 </div>
                             </div>
                         </div>
@@ -58,27 +62,35 @@
 
         <section id="projects" class="section">
             <div class="container">
-                <h2><i class="fas fa-lightbulb"></i> Cool Projects I've Worked On</h2>
+                <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3><i class="fas fa-robot"></i> AI Hotel Booking Assistant</h3>
+                        <h3><i class="fas fa-microchip"></i> AI Hotel Booking Assistant</h3>
                         <p>Developed a Llama 2-based AI assistant using Docker, and HuggingFace, 
                            demonstrating practical applications of NLP in the hospitality sector.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App" class="button">Learn More</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App" class="button">View Project</a>
                     </div>
                     <div class="project-card">
-                        <h3><i class="fas fa-gamepad"></i> Game: Pong AI with Deep Q-Learning</h3>
+                        <h3><i class="fas fa-cogs"></i> Pong AI with Deep Q-Learning</h3>
                         <p>Implemented neural networks for game AI using PyTorch, showcasing advanced 
                            reinforcement learning techniques.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/rl-pong-agent" class="button">Learn More</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/rl-pong-agent" class="button">View Project</a>
                     </div>
                     <div class="project-card">
-                        <h3><i class="fas fa-chart-line"></i> Finance RAG Implementation</h3>
+                        <h3><i class="fas fa-database"></i> Finance RAG Implementation</h3>
                         <p>Built a Retrieval Augmented Generation system for financial due diligence using 
                            GEMMA and Llama models. Features include data cleaning, embedding generation, 
                            vector search, and intelligent query handling with MongoDB integration.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation" class="button">Learn More</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation" class="button">View Project</a>
                     </div>
+                </div>
+                <div class="view-all-container">
+                    <a href="projects.html" class="view-all-button">
+                        <span>View All Projects</span>
+                        <span class="arrow-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -87,9 +99,13 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/Paraskevi-KIvroglou"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile">
+                    <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
+                    </svg>
+                </a>
             </div>
             <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
         </div>
