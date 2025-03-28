@@ -52,8 +52,8 @@ function redirectToBooking(service) {
     // Define your Go High Level calendar URLs for each service type
     const bookingUrls = {
         'consultation': 'https://api.leadconnectorhq.com/widget/booking/KnLhETWeXcsKQXRLkNI6/',
-        'training': 'https://yoursubdomain.gohighlevel.com/booking/YOUR_TRAINING_CALENDAR_ID/',
-        'development': 'https://yoursubdomain.gohighlevel.com/booking/YOUR_DEVELOPMENT_CALENDAR_ID/',
+        'training': 'https://api.leadconnectorhq.com/widget/form/RmCVZOApDLA2S0ZCdv7S',
+        'development': 'https://api.leadconnectorhq.com/widget/form/7GpHVgZ9uiaeW71w7Nds',
         'project': 'https://yoursubdomain.gohighlevel.com/booking/YOUR_PROJECT_CALENDAR_ID/'
     };
     

@@ -1061,6 +1061,7 @@ h3 i {
 .contact-alt {
     max-width: 800px;
     margin: 0 auto;
+    min-height: 800px;
 }
 
 .contact-alt h3 {
