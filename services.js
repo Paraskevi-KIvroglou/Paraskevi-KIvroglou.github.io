@@ -49,29 +49,31 @@ document.addEventListener('DOMContentLoaded', function() {
  * @param {string} service - The type of service being booked
  */
 function redirectToBooking(service) {
-    // Define your Go High Level calendar URLs for each service type
-    const bookingUrls = {
-        'consultation': 'https://api.leadconnectorhq.com/widget/booking/KnLhETWeXcsKQXRLkNI6/',
-        'training': 'https://api.leadconnectorhq.com/widget/form/RmCVZOApDLA2S0ZCdv7S',
-        'development': 'https://api.leadconnectorhq.com/widget/form/7GpHVgZ9uiaeW71w7Nds',
-        'project': "https://api.leadconnectorhq.com/widget/form/0viKwec6MrAiXfWjmd7R"
-    };
-    
-    // Track the booking attempt (optional)
-    if (typeof gtag !== 'undefined') {
-        gtag('event', 'booking_attempt', {
-            'event_category': 'engagement',
-            'event_label': service
-        });
+    // Cache booking URLs to avoid recreating the object each time
+    if (!window.bookingUrlCache) {
+        window.bookingUrlCache = {
+            'consultation': 'https://api.leadconnectorhq.com/widget/booking/KnLhETWeXcsKQXRLkNI6/',
+            'training': 'https://api.leadconnectorhq.com/widget/form/RmCVZOApDLA2S0ZCdv7S',
+            'development': 'https://api.leadconnectorhq.com/widget/form/7GpHVgZ9uiaeW71w7Nds',
+            'project': "https://api.leadconnectorhq.com/widget/form/0viKwec6MrAiXfWjmd7R"
+        };
     }
     
-    // Get the URL for the requested service or use consultation as default
-    const bookingUrl = bookingUrls[service] || bookingUrls['consultation'];
+    // Get the URL with less code
+    const bookingUrl = window.bookingUrlCache[service] || window.bookingUrlCache['consultation'];
     
-    // Open the booking calendar in a new tab
+    // Track asynchronously to not block
+    if (typeof gtag !== 'undefined') {
+        setTimeout(() => {
+            gtag('event', 'booking_attempt', {
+                'event_category': 'engagement',
+                'event_label': service
+            });
+        }, 0);
+    }
+    
+    // Open the booking calendar
     window.open(bookingUrl, '_blank');
-    
-    // Return false to prevent default anchor behavior
     return false;
 }
 
@@ -105,4 +107,38 @@ window.addEventListener('load', function() {
     } else {
         console.log('GHL Form script loaded successfully');
     }
-}); 
+});
+
+function lazyLoadIframes() {
+    const iframes = document.querySelectorAll('iframe[data-src]');
+    
+    // Set up intersection observer
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target;
+                iframe.src = iframe.getAttribute('data-src');
+                observer.unobserve(iframe);
+                
+                // Show loading indicator
+                const container = iframe.closest('.ghl-form-container');
+                if (container) {
+                    container.classList.add('loading');
+                    
+                    // Hide loading indicator when iframe loads
+                    iframe.addEventListener('load', () => {
+                        container.classList.remove('loading');
+                    });
+                }
+            }
+        });
+    });
+    
+    // Observe all iframes
+    iframes.forEach(iframe => {
+        observer.observe(iframe);
+    });
+}
+
+// Call this function after DOM is loaded
+document.addEventListener('DOMContentLoaded', lazyLoadIframes); 
