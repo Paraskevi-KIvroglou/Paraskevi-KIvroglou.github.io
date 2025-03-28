@@ -54,7 +54,7 @@ function redirectToBooking(service) {
         'consultation': 'https://api.leadconnectorhq.com/widget/booking/KnLhETWeXcsKQXRLkNI6/',
         'training': 'https://api.leadconnectorhq.com/widget/form/RmCVZOApDLA2S0ZCdv7S',
         'development': 'https://api.leadconnectorhq.com/widget/form/7GpHVgZ9uiaeW71w7Nds',
-        'project': 'https://yoursubdomain.gohighlevel.com/booking/YOUR_PROJECT_CALENDAR_ID/'
+        'project': "https://api.leadconnectorhq.com/widget/form/0viKwec6MrAiXfWjmd7R"
     };
     
     // Track the booking attempt (optional)

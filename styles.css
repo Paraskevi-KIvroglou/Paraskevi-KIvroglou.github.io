@@ -1197,3 +1197,127 @@ h3 i {
     50% { transform: scale(1.02); }
     100% { transform: scale(1); }
 }
+
+/* Services Hook Section */
+.services-hook {
+    margin: 2rem 0 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.hook-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hook-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hook-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #ffffff, #a0a0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hook-header p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hook-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.hook-box {
+    background: linear-gradient(145deg, #1a1a1a, #0c0c0c);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.hook-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.1);
+}
+
+.hook-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hook-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.hook-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hook-box ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #d0d0d0;
+}
+
+.hook-box ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+}
+
+.hook-cta {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(145deg, #1a1a1a, #0c0c0c);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.hook-cta p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.button-large {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hook-boxes {
+        grid-template-columns: 1fr;
+    }
+    
+    .hook-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hook-cta p {
+        font-size: 1.1rem;
+    }
+}
