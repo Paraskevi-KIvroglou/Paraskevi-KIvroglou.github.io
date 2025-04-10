@@ -21,6 +21,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
@@ -29,31 +30,41 @@
     </header>
 
     <main>
-        <section id="about" class="section">
+        <section id="introduction" class="section">
             <div class="container">
                 <h1>Professional Software Development & AI Solutions</h1>
                 <div class="about-content">
                     <img src="photos/ME.jpg" alt="Paraskevi Kivroglou" class="profile-img">
                     <div class="about-text">
-                        <h2><i class="fas fa-terminal"></i> About Me</h2>
-                        <p>Hello! I'm Paraskevi Kivroglou, a Software Developer at inuTech GmbH with a passion for Artificial Intelligence 
-                           and Mathematics. Currently pursuing my M.Sc. in Artificial Intelligence at the International University of 
-                           Applied Sciences in Berlin, I combine my mathematical background with cutting-edge AI technologies to create 
-                           innovative solutions.</p>
-                        
-                        <p><i class="fas fa-chevron-right"></i> My expertise spans full-stack development, AI systems, and algorithm optimization. I'm particularly interested 
-                           in Natural Language Processing, Computer Vision, and multi-agent systems. Whether it's developing AI-powered 
-                           applications or optimizing engineering calculations, I'm driven by the challenge of solving complex problems 
-                           through technology.</p>
+                        <h2><span class="emoji">👋</span> Hi, I'm Paraskevi</h2>
+                        <p>I help <strong>5-6 figure businesses scale</strong> by applying tech to automate their busywork.</p>
+                        <p>Drowning in emails and busywork? Our automation cuts the chaos and hands you back <strong>time to grow</strong>—fast and simple.
+                           Repetitive tasks slowing you down? We zap them with smart tech, so you focus on <strong>profits, and save 10+ hours per week</strong>.</p>
 
-                        <div class="skills-section">
-                            <h3><i class="fas fa-cubes"></i> Core Competencies</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <span><i class="fas fa-brain"></i> AI & ML</span>
-                                    <span><i class="fas fa-code"></i> Full-Stack Development</span>
-                                    <span><i class="fas fa-server"></i> Cloud Architecture</span>
-                                </div>
+                        <div class="buttons-container">
+                            <div class="view-all-container">
+                                <a href="#projects" class="view-all-button scroll-btn">
+                                    <span>Peek My Work Below</span>
+                                    <span class="arrow-icon">
+                                        <i class="fas fa-arrow-down"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="view-all-container">
+                                <a href="about.html" class="view-all-button">
+                                    <span>Learn More About Me</span>
+                                    <span class="arrow-icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="view-all-container">
+                                <a href="services.html" class="view-all-button">
+                                    <span>View My Services</span>
+                                    <span class="arrow-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -111,5 +122,24 @@
             <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('.scroll-btn').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

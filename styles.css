@@ -120,6 +120,15 @@ body {
     margin-top: 2rem;
 }
 
+/* Custom class for about page layout */
+.about-page-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-top: 0.5rem;
+    padding: 1.5rem 0;
+}
+
 .profile-img {
     width: 220px;
     height: 220px;
@@ -129,6 +138,15 @@ body {
     transition: all 0.4s ease;
     filter: grayscale(100%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.about-profile-img {
+    margin-top: -10px;
+    padding: 0.5rem;
+}
+
+.about-page-text {
+    padding: 1rem 0;
 }
 
 .profile-img:hover {
@@ -141,11 +159,41 @@ body {
     flex: 1;
 }
 
+.about-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.8rem;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.about-text h2 .emoji {
+    font-size: 2.8rem;
+    margin-right: 8px;
+}
+
 .about-text p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    line-height: 1.9;
     color: #d0d0d0;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+}
+
+.about-text p strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Highlight first paragraph */
+.about-text p:first-of-type {
+    font-size: 1.35rem;
+    color: #f0f0f0;
+    font-weight: 500;
+    border-left: none;
+    padding-left: 0;
 }
 
 h1 {
@@ -404,39 +452,51 @@ footer {
 
 /* Skills section */
 .skills-section {
-    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     margin-top: 1.5rem;
-    animation: slideIn 0.8s ease-out;
+}
+
+.skill-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: flex-start;
 }
 
 .skill-category span {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: #161616;
-    color: white;
-    border-radius: 30px;
-    margin: 0.25rem;
-    font-size: 0.95rem;
+    background: #1a1a1a;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
     transition: all 0.3s ease;
+    flex: 0 1 auto;
+    white-space: nowrap;
     border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .skill-category span:hover {
-    transform: scale(1.05) translateY(-3px);
-    background: #fff;
-    color: #000;
-    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+    background: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.2);
 }
 
-.skill-category i {
-    margin-right: 8px;
+.skill-category span i {
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 /* Animations */
@@ -456,7 +516,7 @@ footer {
     }
 }
 
-/* Responsive design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -481,6 +541,28 @@ footer {
     h2:after {
         left: 50%;
         transform: translateX(-50%);
+    }
+    
+    .buttons-container {
+        padding-top: 5rem;
+        justify-content: center;
+    }
+    
+    .buttons-container .view-all-container {
+        max-width: 300px;
+    }
+
+    .skill-category {
+        justify-content: center;
+    }
+
+    .skill-category span {
+        padding: 0.7rem 1.3rem;
+        font-size: 0.95rem;
+    }
+
+    .skill-category span i {
+        font-size: 1rem;
     }
 }
 
@@ -797,9 +879,27 @@ h3 i {
     margin-top: 3rem;
 }
 
+/* Buttons container for horizontal alignment */
+.buttons-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container .view-all-container {
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .view-all-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 0.9rem 2rem;
     background: transparent;
     color: white;
@@ -811,6 +911,7 @@ h3 i {
     letter-spacing: 1px;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
 }
 
 .view-all-button span {
@@ -821,7 +922,7 @@ h3 i {
 
 .arrow-icon {
     margin-left: 10px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -845,6 +946,20 @@ h3 i {
 
 .view-all-button:hover .arrow-icon i {
     animation: arrow-pulse 1.5s infinite ease-in-out;
+}
+
+/* Scroll button specific styling */
+.scroll-btn .arrow-icon i {
+    transition: transform 0.3s ease;
+}
+
+.scroll-btn:hover .arrow-icon i {
+    animation: bounce-down 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce-down {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
 }
 
 /* Brand with Initial Logo */
@@ -1319,5 +1434,22 @@ h3 i {
     
     .hook-cta p {
         font-size: 1.1rem;
+    }
+}
+
+.education-section {
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons-container .view-all-container {
+        width: 100%;
+        max-width: 280px;
+        min-width: unset;
     }
 }
