@@ -46,22 +46,114 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="media-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
+    
+    <!-- Schema.org structured data for Projects page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "AI & Software Development Portfolio",
+        "description": "Portfolio showcasing AI projects, machine learning implementations, and software development work by Paraskevi Kivroglou",
+        "url": "https://paraskevikivroglou.com/projects.html",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "AI Hotel Booking Assistant",
+                    "description": "Llama 2-based AI assistant using Docker and HuggingFace for hospitality sector",
+                    "applicationCategory": "AI Assistant",
+                    "operatingSystem": "Docker",
+                    "programmingLanguage": "Python",
+                    "url": "https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Pong AI with Deep Q-Learning",
+                    "description": "Neural networks for game AI using PyTorch and reinforcement learning",
+                    "applicationCategory": "Game AI",
+                    "programmingLanguage": "Python",
+                    "url": "https://github.com/Paraskevi-KIvroglou/rl-pong-agent"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Finance RAG Implementation",
+                    "description": "Retrieval Augmented Generation system for financial due diligence using GEMMA and Llama models",
+                    "applicationCategory": "Financial AI",
+                    "programmingLanguage": "Python",
+                    "url": "https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "SoftwareApplication",
+                    "name": "Chatbot App with AWS Endpoint",
+                    "description": "AI-powered chatbot platform using AWS Lambda and API Gateway with LangChain",
+                    "applicationCategory": "AI Chatbot",
+                    "operatingSystem": "AWS",
+                    "programmingLanguage": "Python",
+                    "url": "https://github.com/Paraskevi-KIvroglou/chatbot-app-aws-endpoint"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-brand-link">
-                <div class="nav-brand">Paraskevi Kivroglou</div>
+                <div class="nav-brand">
+                    <span class="brand-name">Paraskevi Kivroglou</span>
+                </div>
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Breadcrumb Navigation for SEO -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Projects</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
 
     <main>
         <section class="section">
@@ -203,5 +295,40 @@
         </div>
     </footer>
     <script src="projects.js"></script>
+    
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+
+            mobileMenuToggle.addEventListener('click', function() {
+                // Toggle mobile menu
+                navLinks.classList.toggle('mobile-open');
+                mobileMenuToggle.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navbar')) {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
