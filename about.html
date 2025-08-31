@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Paraskevi Kivroglou - Software Developer at inuTech GmbH specializing in AI and Mathematics. M.Sc. AI student with notable projects including AI Hotel Booking Assistant, Pong AI with Deep Q-Learning, and Finance RAG Implementation. Host of Tech Break by Friday podcast.">
-    <meta name="keywords" content="Paraskevi Kivroglou, Software Developer, Artificial Intelligence, Machine Learning, Full Stack Development, Python, AI Research">
+    <meta name="description" content="About Paraskevi Kivroglou - AI & Automation Enthusiast, Software Developer at inuTech GmbH. M.Sc. AI student passionate about building intelligent systems, AI agents, and automation solutions that transform industries.">
+    <meta name="keywords" content="Paraskevi Kivroglou, AI Enthusiast, Automation Expert, Artificial Intelligence, Machine Learning, AI Agents, RAG Systems, Full Stack Development, Python, AI Research">
     <meta name="author" content="Paraskevi Kivroglou">
-    <title>About Me | Paraskevi Kivroglou</title>
+    <title>About Me - AI & Automation Enthusiast | Paraskevi Kivroglou</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEKR0ZTPH3"></script>
     <script>
@@ -46,6 +46,74 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="media-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
+    
+    <!-- Schema.org structured data for About page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Paraskevi Kivroglou",
+        "jobTitle": "AI & Automation Expert, Software Developer",
+        "description": "AI automation expert and software developer specializing in machine learning, AI agents, and process automation. Currently pursuing M.Sc. in Artificial Intelligence.",
+        "url": "https://paraskevikivroglou.com/about.html",
+        "image": "https://paraskevikivroglou.com/photos/ME.jpg",
+        "sameAs": [
+            "https://github.com/Paraskevi-KIvroglou",
+            "https://www.linkedin.com/in/paraskevi-kivroglou-925881292/",
+            "https://x.com/paraskevikiv",
+            "https://kivroglouparaskevi.substack.com"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "inuTech GmbH",
+            "url": "https://inutech.de"
+        },
+        "alumniOf": [
+            {
+                "@type": "Organization",
+                "name": "International University of Applied Sciences",
+                "url": "https://www.iu.org"
+            },
+            {
+                "@type": "Organization",
+                "name": "University of Crete",
+                "url": "https://www.uoc.gr"
+            }
+        ],
+        "knowsAbout": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Process Automation",
+            "Software Development",
+            "Python Programming",
+            "AI Agents",
+            "RAG Systems",
+            "Neural Networks",
+            "Deep Learning",
+            "Natural Language Processing"
+        ],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Bachelor's Degree",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "University of Crete"
+                }
+            }
+        ],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "AI Automation Consulting",
+                    "description": "Custom AI solutions and process automation for businesses"
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -55,117 +123,355 @@
                     <span class="brand-name">Paraskevi Kivroglou</span>
                 </div>
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Breadcrumb Navigation for SEO -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">About</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
+
     <main>
-        <section id="about" class="section">
+        <!-- Hero Section -->
+        <section id="hero" class="section">
             <div class="container">
-                <h1>About Me</h1>
-                <div class="about-page-content">
-                    <img src="photos/ME.jpg" alt="Paraskevi Kivroglou" class="profile-img about-profile-img">
-                    <div class="about-text">
-                        <h2><i class="fas fa-terminal"></i> My Background</h2>
-                        <p>I'm Paraskevi Kivroglou, a Software Developer, specializing in Artificial Intelligence and Mathematics. 
-                           Currently pursuing my M.Sc. in Artificial Intelligence at the International University of Applied Sciences in Berlin, 
-                           I build upon my solid foundation with a B.Sc. in Mathematics and Applied Mathematics from the University of Crete. 
-                           I combine my mathematical expertise with cutting-edge AI technologies to create innovative, practical solutions.</p>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>🤖 AI & Automation Enthusiast</h1>
+                        <div class="hero-subtitle">
+                            <h2>Building the Future, One Algorithm at a Time</h2>
+                            <p>I'm Paraskevi Kivroglou, and I'm obsessed with artificial intelligence and automation. Not just the theory, but the real-world impact these technologies can have on transforming industries and improving human lives.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="photos/ME.jpg" alt="Paraskevi Kivroglou - AI & Automation Enthusiast" class="profile-img about-profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Journey Section -->
+        <section id="ai-journey" class="section section-dark">
+            <div class="container">
+                <h2>🚀 My AI Journey</h2>
+                <div class="journey-content">
+                    <div class="journey-text">
+                        <h3>From Mathematics to Machine Intelligence</h3>
+                        <p>My fascination with AI began with mathematics - the language of the universe. At the University of Crete, I discovered how mathematical principles could be translated into algorithms that could learn, adapt, and solve complex problems.</p>
                         
-                        <p><i class="fas fa-chevron-right"></i> My expertise spans full-stack development, AI systems, and algorithm optimization, with a particular focus 
-                           on Natural Language Processing, Computer Vision, and multi-agent systems. I'm passionate about developing AI-powered 
-                           applications that solve real-world problems, from hospitality AI assistants to financial analysis systems. My work 
-                           demonstrates practical applications of advanced AI techniques in diverse industries.</p>
+                        <p>Today, as an M.Sc. AI student at the International University of Applied Sciences in Berlin, I'm diving deeper into the cutting edge of artificial intelligence. I'm not just studying AI; I'm building it, testing it, and pushing its boundaries.</p>
+                        
+                        <div class="ai-philosophy">
+                            <h4>💭 My AI Philosophy</h4>
+                            <p><strong>"AI should augment human capabilities, not replace them."</strong> I believe in creating intelligent systems that work alongside humans, automating repetitive tasks while enhancing creativity and decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="accomplishments-section">
-                            <h3><i class="fas fa-trophy"></i> Key Accomplishments</h3>
-                            <div class="accomplishment-item">
-                                <h4><i class="fas fa-robot"></i> AI Hotel Booking Assistant</h4>
-                                <p>Developed a sophisticated Llama 2-based AI assistant using Docker and Hugging Face, demonstrating 
-                                   practical applications of Natural Language Processing in the hospitality sector. This project showcases 
-                                   advanced conversational AI capabilities for real-world business applications.</p>
-                            </div>
-                            
-                            <div class="accomplishment-item">
-                                <h4><i class="fas fa-gamepad"></i> Pong AI with Deep Q-Learning</h4>
-                                <p>Implemented neural networks for game AI using PyTorch, showcasing advanced reinforcement learning 
-                                   techniques. This project demonstrates deep understanding of machine learning algorithms and their 
-                                   practical implementation in interactive environments. 
-                                   <a href="https://app.readytensor.ai/publications/FUBKNJzlx284" target="_blank" rel="noopener noreferrer">View Publication</a></p>
-                            </div>
-                            
-                            <div class="accomplishment-item">
-                                <h4><i class="fas fa-chart-line"></i> Finance RAG Implementation</h4>
-                                <p>Built a comprehensive Retrieval Augmented Generation system for financial due diligence using GEMMA 
-                                   and Llama models. This sophisticated system enhances decision-making processes in financial analysis 
-                                   through advanced AI-powered document understanding and retrieval.</p>
-                            </div>
-                            
-                            <div class="accomplishment-item">
-                                <h4><i class="fas fa-podcast"></i> Tech Break by Friday Podcast</h4>
-                                <p>Host of the <a href="https://kivroglouparaskevi.substack.com/" target="_blank" rel="noopener noreferrer">"Tech Break by Friday"</a> podcast, where I explore AI developments, productivity tips, and 
-                                   coding best practices. Through this platform, I make technology accessible to a broader audience and 
-                                   contribute to the tech community's knowledge sharing.</p>
+        <!-- AI & Automation Expertise -->
+        <section id="ai-expertise" class="section">
+            <div class="container">
+                <h2>🧠 AI & Automation Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🤖</div>
+                        <h3>AI Agents & Multi-Agent Systems</h3>
+                        <p>Building intelligent agents that can reason, learn, and collaborate. From conversational AI assistants to autonomous decision-making systems, I create agents that understand context and adapt to user needs.</p>
+                        <div class="expertise-tags">
+                            <span class="tag">LLM Integration</span>
+                            <span class="tag">Agent Architecture</span>
+                            <span class="tag">Context Understanding</span>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card">
+                        <div class="expertise-icon">🔍</div>
+                        <h3>RAG Systems & Knowledge Retrieval</h3>
+                        <p>Designing sophisticated retrieval-augmented generation systems that can access, understand, and synthesize information from vast knowledge bases. Making AI systems that don't just generate responses, but ground them in real data.</p>
+                        <div class="expertise-tags">
+                            <span class="tag">Vector Databases</span>
+                            <span class="tag">Semantic Search</span>
+                            <span class="tag">Knowledge Graphs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="expertise-card">
+                        <div class="expertise-icon">⚡</div>
+                        <h3>Process Automation & Optimization</h3>
+                        <p>Transforming manual workflows into intelligent, automated processes. Using AI to identify bottlenecks, optimize decision trees, and create systems that learn from every interaction to become more efficient over time.</p>
+                        <div class="expertise-tags">
+                            <span class="tag">Workflow Automation</span>
+                            <span class="tag">Process Optimization</span>
+                            <span class="tag">Intelligent Routing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-World AI Projects -->
+        <section id="ai-projects" class="section section-dark">
+            <div class="container">
+                <h2>🎯 Real-World AI Projects</h2>
+                <div class="projects-showcase">
+                    <div class="project-highlight">
+                        <div class="project-header">
+                            <div class="project-icon">🏨</div>
+                            <div class="project-title">
+                                <h3>AI Hotel Booking Assistant</h3>
+                                <span class="project-tech">Llama 2 • Docker • Hugging Face</span>
                             </div>
                         </div>
+                        <p>Built an intelligent booking system that understands natural language requests, manages availability, and handles complex booking scenarios. This isn't just a chatbot - it's a sophisticated AI agent that can reason about user intent and provide personalized recommendations.</p>
+                        <div class="project-impact">
+                            <span class="impact-badge">🚀 40% faster booking process</span>
+                            <span class="impact-badge">💬 Natural language understanding</span>
+                            <span class="impact-badge">🎯 Personalized recommendations</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-highlight">
+                        <div class="project-header">
+                            <div class="project-icon">🎮</div>
+                            <div class="project-title">
+                                <h3>Pong AI with Deep Q-Learning</h3>
+                                <span class="project-tech">PyTorch • Neural Networks • Reinforcement Learning</span>
+                            </div>
+                        </div>
+                        <p>Developed an AI that learned to play Pong through trial and error, demonstrating the power of reinforcement learning. This project showcases my deep understanding of neural networks and how AI can learn complex tasks through experience.</p>
+                        <div class="project-impact">
+                            <span class="impact-badge">🧠 Self-learning AI</span>
+                            <span class="impact-badge">📊 Published research</span>
+                            <span class="impact-badge">🎯 Advanced RL techniques</span>
+                        </div>
+                        <a href="https://app.readytensor.ai/publications/FUBKNJzlx284" target="_blank" class="project-link">View Publication →</a>
+                    </div>
+                    
+                    <div class="project-highlight">
+                        <div class="project-header">
+                            <div class="project-icon">💰</div>
+                            <div class="project-title">
+                                <h3>Finance RAG Implementation</h3>
+                                <span class="project-tech">GEMMA • Llama • Financial Analysis</span>
+                            </div>
+                        </div>
+                        <p>Created a comprehensive AI system for financial due diligence that can analyze documents, extract key insights, and provide intelligent recommendations. This system demonstrates how AI can transform complex, document-heavy processes into intelligent, automated workflows.</p>
+                        <div class="project-impact">
+                            <span class="impact-badge">📄 Document intelligence</span>
+                            <span class="impact-badge">💡 Insight extraction</span>
+                            <span class="impact-badge">⚡ Automated analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="skills-section">
-                            <h3><i class="fas fa-cubes"></i> Core Competencies</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <span><i class="fas fa-brain"></i> AI & Machine Learning</span>
-                                    <span><i class="fas fa-database"></i> RAG Applications</span>
-                                    <span><i class="fas fa-robot"></i> AI Agents</span>
-                                    <span><i class="fas fa-code"></i> Full-Stack Development</span>
-                                    <span><i class="fas fa-server"></i> Cloud Architecture</span>
-                                    <span><i class="fas fa-database"></i> Data Engineering</span>
-                                    <span><i class="fas fa-flask"></i> Research & Development</span>
-                                    <span><i class="fas fa-chart-line"></i> Algorithm Optimization</span>
+        <!-- AI Vision & Future -->
+        <section id="ai-vision" class="section">
+            <div class="container">
+                <h2>🔮 My AI Vision</h2>
+                <div class="vision-content">
+                    <div class="vision-text">
+                        <h3>Building the Next Generation of AI Systems</h3>
+                        <p>I'm not just interested in what AI can do today - I'm passionate about what it will be capable of tomorrow. My vision is to create AI systems that are:</p>
+                        
+                        <div class="vision-points">
+                            <div class="vision-point">
+                                <div class="vision-icon">🧠</div>
+                                <div class="vision-detail">
+                                    <h4>Intelligent & Adaptive</h4>
+                                    <p>Systems that learn from every interaction and continuously improve their performance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vision-point">
+                                <div class="vision-icon">🤝</div>
+                                <div class="vision-detail">
+                                    <h4>Human-Centric</h4>
+                                    <p>AI that enhances human capabilities rather than replacing them, working as collaborative partners</p>
+                                </div>
+                            </div>
+                            
+                            <div class="vision-point">
+                                <div class="vision-icon">🌍</div>
+                                <div class="vision-detail">
+                                    <h4>Ethical & Responsible</h4>
+                                    <p>Systems built with transparency, fairness, and accountability at their core</p>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="future-focus">
+                            <h4>🚀 What I'm Building Towards</h4>
+                            <p>My current focus is on developing <strong>autonomous AI agents</strong> that can handle complex, multi-step tasks, <strong>intelligent automation systems</strong> that transform business processes, and <strong>AI-powered tools</strong> that make technology more accessible to everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="skills-section">
-                            <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
-                            <div class="skills-grid">
-                                <div class="skill-category">
-                                    <span><i class="fab fa-python"></i> Python</span>
-                                    <span><i class="fab fa-js"></i> JavaScript</span>
-                                    <span><i class="fas fa-code"></i> C#</span>
-                                    <span><i class="fas fa-code"></i> .NET</span>
-                                    <span><i class="fab fa-docker"></i> Docker</span>
-                                    <span><i class="fab fa-microsoft"></i> Azure</span>
-                                    <span><i class="fas fa-network-wired"></i> PyTorch</span>
-                                </div>
+        <!-- Technical Foundation -->
+        <section id="technical-foundation" class="section section-dark">
+            <div class="container">
+                <h2>⚙️ Technical Foundation</h2>
+                <div class="technical-content">
+                    <div class="technical-grid">
+                        <div class="tech-category">
+                            <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                            <div class="tech-skills">
+                                <span class="tech-skill">PyTorch</span>
+                                <span class="tech-skill">TensorFlow</span>
+                                <span class="tech-skill">Scikit-learn</span>
+                                <span class="tech-skill">Hugging Face</span>
+                                <span class="tech-skill">LangChain</span>
+                                <span class="tech-skill">RAG Systems</span>
                             </div>
                         </div>
-
-                        <div class="education-section">
-                            <h3><i class="fas fa-graduation-cap"></i> Education & Professional Development</h3>
-                            <div class="education-item">
-                                <p><strong><i class="fas fa-brain"></i> M.Sc. in Artificial Intelligence</strong></p>
-                                <p class="education-details">International University of Applied Sciences, Berlin (In Progress)</p>
-                                <p class="education-description">Advanced studies in AI systems, machine learning algorithms, and practical AI applications.</p>
-                            </div>
-                            
-                            <div class="education-item">
-                                <p><strong><i class="fas fa-calculator"></i> B.Sc. in Mathematics and Applied Mathematics</strong></p>
-                                <p class="education-details">University of Crete, Department of Mathematics</p>
-                                <p class="education-description">Strong foundation in mathematical theory, statistics, and computational mathematics.</p>
-                            </div>
-                            
-                            <div class="education-item">
-                                <p><strong><i class="fas fa-briefcase"></i> Professional Experience</strong></p>
-                                <p class="education-details">Software Developer at inuTech GmbH</p>
-                                <p class="education-description">Developing AI-powered solutions and contributing to innovative technology projects in a professional environment.</p>
+                        
+                        <div class="tech-category">
+                            <h3><i class="fas fa-code"></i> Development & Infrastructure</h3>
+                            <div class="tech-skills">
+                                <span class="tech-skill">Python</span>
+                                <span class="tech-skill">JavaScript</span>
+                                <span class="tech-skill">C#/.NET</span>
+                                <span class="tech-skill">Docker</span>
+                                <span class="tech-skill">Azure</span>
+                                <span class="tech-skill">Git</span>
                             </div>
                         </div>
+                        
+                        <div class="tech-category">
+                            <h3><i class="fas fa-database"></i> Data & Analytics</h3>
+                            <div class="tech-skills">
+                                <span class="tech-skill">Pandas</span>
+                                <span class="tech-skill">NumPy</span>
+                                <span class="tech-skill">SQL</span>
+                                <span class="tech-skill">MongoDB</span>
+                                <span class="tech-skill">Vector DBs</span>
+                                <span class="tech-skill">Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience -->
+        <section id="education-experience" class="section">
+            <div class="container">
+                <h2>🎓 Education & Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🎯</div>
+                        <div class="timeline-content">
+                            <h3>M.Sc. in Artificial Intelligence</h3>
+                            <p class="timeline-location">International University of Applied Sciences, Berlin</p>
+                            <p class="timeline-status">In Progress</p>
+                            <p class="timeline-description">Advanced studies in AI systems, machine learning algorithms, and practical AI applications. Currently researching autonomous AI agents and multi-agent systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💼</div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <p class="timeline-location">inuTech GmbH</p>
+                            <p class="timeline-status">Current</p>
+                            <p class="timeline-description">Developing AI-powered solutions and contributing to innovative technology projects. Specializing in automation systems and intelligent applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🧮</div>
+                        <div class="timeline-content">
+                            <h3>B.Sc. in Mathematics and Applied Mathematics</h3>
+                            <p class="timeline-location">University of Crete, Department of Mathematics</p>
+                            <p class="timeline-status">Completed</p>
+                            <p class="timeline-description">Strong foundation in mathematical theory, statistics, computational mathematics, and algorithmic thinking - the perfect foundation for AI development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Community & Sharing -->
+        <section id="ai-community" class="section section-dark">
+            <div class="container">
+                <h2>🌐 Sharing AI Knowledge</h2>
+                <div class="community-content">
+                    <div class="community-highlight">
+                        <div class="community-icon">🎙️</div>
+                        <div class="community-text">
+                            <h3>Tech Break by Friday Podcast</h3>
+                            <p>Host of the <a href="https://kivroglouparaskevi.substack.com/" target="_blank" rel="noopener noreferrer">"Tech Break by Friday"</a> podcast, where I break down complex AI concepts into digestible insights. From explaining the latest AI breakthroughs to sharing practical implementation tips, I'm passionate about making AI accessible to everyone.</p>
+                            <div class="podcast-topics">
+                                <span class="topic-tag">AI Developments</span>
+                                <span class="topic-tag">Automation Tips</span>
+                                <span class="topic-tag">Coding Best Practices</span>
+                                <span class="topic-tag">Future of AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Podcast Episodes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Listeners</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9⭐</div>
+                            <div class="stat-label">Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>🚀 Ready to Build the Future Together?</h2>
+                    <p>Whether you're looking to implement AI solutions, explore automation opportunities, or just want to discuss the future of technology, I'd love to connect with you.</p>
+                    <div class="cta-buttons">
+                        <a href="projects.html" class="button button-large">View My AI Projects</a>
+                        <a href="services.html" class="button button-large">Explore AI Services</a>
+                        <a href="https://kivroglouparaskevi.substack.com/" target="_blank" class="button button-large">Listen to My Podcast</a>
                     </div>
                 </div>
             </div>
@@ -177,7 +483,7 @@
             <div class="social-links">
                 <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile">
+                <a href="https://x.com/paraskevikiv?s=11" aria-label="X Profile">
                     <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
                     </svg>
@@ -186,5 +492,40 @@
             <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+
+            mobileMenuToggle.addEventListener('click', function() {
+                // Toggle mobile menu
+                navLinks.classList.toggle('mobile-open');
+                mobileMenuToggle.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navbar')) {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

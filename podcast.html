@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore tech insights and AI discussions with Paraskevi Kivroglou. Listen to conversations about software development, artificial intelligence, and technology trends.">
-    <meta name="keywords" content="Tech Podcast, AI Discussions, Software Development, Technology Trends">
+    <meta name="description" content="Tech Break by Friday - Weekly tech insights and AI discussions with Paraskevi Kivroglou. Listen to conversations about software development, artificial intelligence, and technology trends.">
+    <meta name="keywords" content="Tech Podcast, AI Discussions, Software Development, Technology Trends, Tech Break by Friday, Paraskevi Kivroglou">
     <meta name="author" content="Paraskevi Kivroglou">
-    <title>Tech & AI Podcast | Paraskevi Kivroglou</title>
+    <title>Tech Break by Friday - Tech & AI Podcast | Paraskevi Kivroglou</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEKR0ZTPH3"></script>
     <script>
@@ -46,75 +46,254 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="media-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
+    
+    <!-- Schema.org structured data for Podcast page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PodcastSeries",
+        "name": "Tech Break by Friday",
+        "description": "Weekly tech insights and AI conversations with Paraskevi Kivroglou. Exploring AI, machine learning, productivity tips, and practical coding knowledge.",
+        "url": "https://paraskevikivroglou.com/podcast.html",
+        "image": "https://paraskevikivroglou.com/photos/podcast-logo.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Paraskevi Kivroglou",
+            "jobTitle": "AI & Automation Expert"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Paraskevi Kivroglou",
+            "url": "https://paraskevikivroglou.com"
+        },
+        "genre": ["Technology", "Artificial Intelligence", "Software Development", "Productivity"],
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "hasPart": {
+            "@type": "PodcastEpisode",
+            "name": "Latest Episodes",
+            "description": "Dynamic episodes loaded from RSS feed"
+        },
+        "distribution": [
+            {
+                "@type": "MediaObject",
+                "name": "Spotify",
+                "url": "https://open.spotify.com/show/3c6KAQPQ54vxXUvLLRffC1"
+            },
+            {
+                "@type": "MediaObject",
+                "name": "Apple Podcasts",
+                "url": "https://podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716"
+            },
+            {
+                "@type": "MediaObject",
+                "name": "Substack",
+                "url": "https://kivroglouparaskevi.substack.com"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-brand-link">
-                <div class="nav-brand">Paraskevi Kivroglou</div>
+                <div class="nav-brand">
+                    <span class="brand-name">Paraskevi Kivroglou</span>
+                </div>
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="podcast.html" class="active">Podcast</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="section">
-            <div class="container">
-                <h1>Tech Break by Friday</h1>
-                <div class="podcast-content">
-                    <div class="podcast-info">
-                        <div class="podcast-header">
-                            <div class="podcast-logo-container">
-                                <div class="podcast-logo-background"></div>
-                                <img src="photos/podcast-logo.jpg" alt="Tech Break by Friday Podcast Logo" class="podcast-logo">
-                            </div>
-                            <div class="podcast-title">
-                                <h2><i class="fas fa-microphone"></i> About the Podcast</h2>
-                                <p class="podcast-tagline">Tech Break by Friday - Weekly tech insights and conversations</p>
-                            </div>
-                        </div>
-                        
-                        <p>Hey there! I'm Paraskevi (fun fact: my name means "Friday" in Greek 🌟), and welcome to 
-                           "Tech Break by Friday" - where we explore the fascinating world of technology together!</p>
-                        
-                        <p>In each episode, I dive deep into:</p>
-                        <ul class="podcast-highlights">
-                            <li><i class="fas fa-robot"></i> Latest developments in AI and machine learning</li>
-                            <li><i class="fas fa-lightbulb"></i> Game-changing productivity tips and tech insights</li>
-                            <li><i class="fas fa-code"></i> Practical coding knowledge and best practices</li>
-                            <li><i class="fas fa-users"></i> Making technology accessible to everyone</li>
-                        </ul>
-                        
-                        <p>My mission is to bridge the tech skills gap by sharing knowledge in an accessible, 
-                           engaging way. Whether you're a beginner taking your first steps into tech or a seasoned 
-                           professional looking to level up, this podcast is your weekly companion in navigating 
-                           the digital landscape with confidence.</p>
-                        
-                        <p>Join me every week as we explore how to embrace the digital age while keeping the human 
-                           touch alive. Let's make technology work for us, one episode at a time! 🚀</p>
-                    </div>
-                    
-                    <div class="podcast-platforms">
-                        <h2>Listen On</h2>
-                        <div class="platform-links">
-                            <a href="https://open.spotify.com/show/3c6KAQPQ54vxXUvLLRffC1" class="platform-button"><i class="fab fa-spotify"></i> Spotify</a>
-                            <a href="https://podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716" class="platform-button"><i class="fab fa-apple"></i> Apple Podcasts</a>
-                            <a href="https://paraskevikivroglou.substack.com" class="platform-button"><i class="fas fa-envelope"></i> Substack</a>
-                        </div>
-                    </div>
+    <!-- Breadcrumb Navigation for SEO -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Podcast</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
 
-                    <div class="recent-episodes">
-                        <h2>Recent Episodes</h2>
-                        <!-- Option 2: Use RSS feed with JavaScript (add this if you prefer dynamic loading) -->
-                        <div id="podcast-episodes" class="episode-list">
-                            <!-- Episodes will be loaded here via JavaScript -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>🎙️ Tech Break by Friday</h1>
+                        <div class="podcast-intro">
+                            <h2>Weekly Tech Insights & AI Conversations</h2>
+                            <p>Hey there! I'm Paraskevi (fun fact: my name means "Friday" in Greek 🌟), and welcome to "Tech Break by Friday" - where we explore the fascinating world of technology together!</p>
+                            <p>Join me every week as we dive deep into AI, machine learning, productivity tips, and practical coding knowledge. Whether you're a beginner or a seasoned professional, this podcast is your weekly companion in navigating the digital landscape with confidence.</p>
                         </div>
+                        <div class="hero-cta">
+                            <a href="#listen-now" class="button button-large">
+                                🎧 Listen Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="podcast-logo-container">
+                            <img src="photos/podcast-logo.jpg" alt="Tech Break by Friday Podcast Logo" class="podcast-logo">
+                            <div class="logo-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Highlights Section -->
+        <section id="highlights" class="section section-dark">
+            <div class="container">
+                <h2>💡 What You'll Discover</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🤖</div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Latest developments in artificial intelligence, machine learning algorithms, and how they're transforming industries.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💡</div>
+                        <h3>Productivity Tips</h3>
+                        <p>Game-changing productivity hacks, tech tools, and strategies to help you work smarter, not harder.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💻</div>
+                        <h3>Practical Coding</h3>
+                        <p>Real-world coding examples, best practices, and practical knowledge you can apply immediately.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🌍</div>
+                        <h3>Tech Accessibility</h3>
+                        <p>Making complex technology concepts accessible to everyone, regardless of their technical background.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listen Now Section -->
+        <section id="listen-now" class="section">
+            <div class="container">
+                <h2>🎧 Listen On Your Favorite Platform</h2>
+                <div class="platforms-grid">
+                    <a href="https://open.spotify.com/show/3c6KAQPQ54vxXUvLLRffC1" class="platform-card spotify">
+                        <div class="platform-icon">🎵</div>
+                        <h3>Spotify</h3>
+                        <p>Stream on the world's most popular audio platform</p>
+                        <div class="platform-arrow">→</div>
+                    </a>
+                    <a href="https://podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716" class="platform-card apple">
+                        <div class="platform-icon">🍎</div>
+                        <h3>Apple Podcasts</h3>
+                        <p>Listen on Apple's native podcast platform</p>
+                        <div class="platform-arrow">→</div>
+                    </a>
+                    <a href="https://paraskevikivroglou.substack.com" class="platform-card substack">
+                        <div class="platform-icon">📧</div>
+                        <h3>Substack</h3>
+                        <p>Read transcripts and get additional insights</p>
+                        <div class="platform-arrow">→</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Episodes Section -->
+        <section id="featured-episodes" class="section section-dark">
+            <div class="container">
+                <h2>🎬 Latest Episodes</h2>
+                <div id="featured-episodes-grid" class="episodes-grid">
+                    <!-- Episodes will be populated dynamically from RSS feed -->
+                    <div class="episode-card loading">
+                        <div class="episode-header">
+                            <div class="episode-number">Loading...</div>
+                            <div class="episode-duration">--</div>
+                        </div>
+                        <h3>Loading episodes...</h3>
+                        <p>Fetching the latest episodes from the podcast feed...</p>
+                        <div class="episode-tags">
+                            <span class="tag">Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Episodes Section -->
+        <section id="podcast-episodes-section" class="section">
+            <div class="container">
+                <h2>🎙️ More Episodes</h2>
+                <div id="podcast-episodes" class="episodes-grid">
+                    <!-- Additional episodes will be populated dynamically from RSS feed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About the Host Section -->
+        <section id="about-host" class="section">
+            <div class="container">
+                <div class="host-content">
+                    <div class="host-text">
+                        <h2>👋 Meet Your Host</h2>
+                        <p>I'm Paraskevi Kivroglou, a passionate technologist and AI enthusiast who believes that technology should empower, not intimidate.</p>
+                        <p>My mission is to bridge the tech skills gap by sharing knowledge in an accessible, engaging way. Whether you're taking your first steps into tech or looking to level up your skills, I'm here to guide you through the digital landscape.</p>
+                        <div class="host-stats">
+                            <div class="stat">
+                                <div class="stat-number" id="episode-count">Loading...</div>
+                                <div class="stat-label">Episodes</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" id="listener-count">Loading...</div>
+                                <div class="stat-label">Listeners</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" id="rating">Loading...</div>
+                                <div class="stat-label">Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="host-image">
+                        <img src="photos/ME.jpg" alt="Paraskevi Kivroglou - Podcast Host" class="host-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section id="newsletter" class="section section-dark">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>📬 Stay Updated</h2>
+                    <p>Get notified when new episodes drop and receive exclusive tech insights delivered to your inbox.</p>
+                    <div class="newsletter-form">
+                        <a href="https://paraskevikivroglou.substack.com" class="button button-large">
+                            📧 Subscribe to Newsletter
+                        </a>
                     </div>
                 </div>
             </div>
@@ -126,11 +305,51 @@
             <div class="social-links">
                 <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://x.com/paraskevikiv?s=11" aria-label="X Profile">
+                    <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
+                    </svg>
+                </a>
             </div>
             <p>&copy; 2025 Paraskevi Kivroglou. All rights reserved.</p>
         </div>
     </footer>
+
     <script src="podcast.js"></script>
+    
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+
+            mobileMenuToggle.addEventListener('click', function() {
+                // Toggle mobile menu
+                navLinks.classList.toggle('mobile-open');
+                mobileMenuToggle.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navbar')) {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

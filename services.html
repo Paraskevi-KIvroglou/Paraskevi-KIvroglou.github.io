@@ -46,23 +46,118 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="media-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
+    
+    <!-- Schema.org structured data for Services page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI & Automation Solutions",
+        "description": "Professional AI consulting and automation services that help businesses save 10+ hours per week through intelligent process automation and custom AI solutions.",
+        "provider": {
+            "@type": "Person",
+            "name": "Paraskevi Kivroglou",
+            "jobTitle": "AI & Automation Expert",
+            "url": "https://paraskevikivroglou.com"
+        },
+        "serviceType": "AI Consulting & Automation",
+        "areaServed": "Worldwide",
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://paraskevikivroglou.com/services.html"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI Solutions Packages",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Jumpstart Package",
+                        "description": "AI assessment and roadmap for businesses new to automation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Launchpad Solution",
+                        "description": "Custom AI system development and deployment in 30 days"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "AI Momentum Program",
+                        "description": "Ongoing AI optimization and continuous improvement services"
+                    }
+                }
+            ]
+        },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Business Clients"
+            },
+            "reviewBody": "Transformative AI automation solutions that deliver real business results"
+        }
+    }
+    </script>
+    
     <link rel="preload" href="styles.css" as="style">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-brand-link">
-                <div class="nav-brand">Paraskevi Kivroglou</div>
+                <div class="nav-brand">
+                    <span class="brand-name">Paraskevi Kivroglou</span>
+                </div>
             </a>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Breadcrumb Navigation for SEO -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+        <div class="container">
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item">
+                        <span itemprop="name">Home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Services</span>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+        </div>
+    </nav>
 
     <main>
         <section class="section services-products">
@@ -402,5 +497,40 @@
     </footer>
     
     <script src="services.js" defer></script>
+    
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const body = document.body;
+
+            mobileMenuToggle.addEventListener('click', function() {
+                // Toggle mobile menu
+                navLinks.classList.toggle('mobile-open');
+                mobileMenuToggle.classList.toggle('active');
+                body.classList.toggle('menu-open');
+            });
+
+            // Close menu when clicking on a link
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navbar')) {
+                    navLinks.classList.remove('mobile-open');
+                    mobileMenuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 

@@ -1,4 +1,45 @@
 User-agent: *
-Disallow: /private/
 Allow: /
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+
+# Sitemap location
+Sitemap: https://paraskevikivroglou.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Specific directories to allow
+Allow: /photos/
+Allow: /media-favicon/
+Allow: /styles.css
+Allow: /*.js
+Allow: /*.html
+
+# Disallow admin or private areas (if any exist in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all content for now
+Allow: /
