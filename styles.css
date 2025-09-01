@@ -4127,6 +4127,32 @@ hr, .section, .container, .section > * {
     }
 }
 
+/* AI & Mathematics Animated Background */
+.ai-math-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.4;
+    pointer-events: none;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+/* Podcast Animated Background */
+.podcast-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.6;
+    pointer-events: none;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #000000 100%);
+}
+
 /* Breadcrumb Navigation Styles */
 .breadcrumb-nav {
     background: rgba(0, 0, 0, 0.8);
