@@ -52,6 +52,14 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Community Page - Medium Priority -->
+    <url>
+        <loc>https://paraskevikivroglou.com/community.html</loc>
+        <lastmod>2025-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- External Important Links -->
     <!-- GitHub Profile -->
     <url>
