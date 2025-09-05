@@ -6,6 +6,14 @@
     <meta name="description" content="Tech Break by Friday - Weekly tech insights and AI discussions with Paraskevi Kivroglou. Listen to conversations about software development, artificial intelligence, and technology trends.">
     <meta name="keywords" content="Tech Podcast, AI Discussions, Software Development, Technology Trends, Tech Break by Friday, Paraskevi Kivroglou">
     <meta name="author" content="Paraskevi Kivroglou">
+
+    <!-- Performance & Security -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cs.iubenda.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer-policy" content="strict-origin-when-cross-origin">
+
     <title>Tech Break by Friday - Tech & AI Podcast | Paraskevi Kivroglou</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEKR0ZTPH3"></script>
@@ -25,8 +33,7 @@
         <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async>
     </script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="media-favicon/apple-icon-57x57.png">
@@ -94,9 +101,7 @@
     }
     </script>
 </head>
-<body>
-    <!-- Podcast Animated Background -->
-    
+<body data-visuals="true">
     
     <header>
         <nav class="navbar">
@@ -163,7 +168,11 @@
                     </div>
                     <div class="hero-image">
                         <div class="podcast-logo-container">
-                            <img src="photos/podcast-logo.jpg" alt="Tech Break by Friday Podcast Logo" class="podcast-logo">
+                            <picture>
+                                <source srcset="/photos/podcast-logo.webp" type="image/webp">
+                                <source srcset="/photos/podcast-logo.jpg" type="image/jpeg">
+                                <img src="/photos/podcast-logo.jpg" alt="Tech Break by Friday Podcast Logo" class="podcast-logo" width="300" height="300" decoding="async">
+                            </picture>
                             <div class="logo-glow"></div>
                         </div>
                     </div>
@@ -204,25 +213,20 @@
         <section id="listen-now" class="section">
             <div class="container">
                 <h2>🎧 Listen On Your Favorite Platform</h2>
-                <div class="platforms-grid">
-                    <a href="https://open.spotify.com/show/3c6KAQPQ54vxXUvLLRffC1" class="platform-card spotify">
-                        <div class="platform-icon">🎵</div>
-                        <h3>Spotify</h3>
-                        <p>Stream on the world's most popular audio platform</p>
-                        <div class="platform-arrow">→</div>
-                    </a>
-                    <a href="https://podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716" class="platform-card apple">
-                        <div class="platform-icon">🍎</div>
-                        <h3>Apple Podcasts</h3>
-                        <p>Listen on Apple's native podcast platform</p>
-                        <div class="platform-arrow">→</div>
-                    </a>
-                    <a href="https://paraskevikivroglou.substack.com" class="platform-card substack">
-                        <div class="platform-icon">📧</div>
-                        <h3>Substack</h3>
-                        <p>Read transcripts and get additional insights</p>
-                        <div class="platform-arrow">→</div>
-                    </a>
+
+                <!-- Spotify Embed for Latest Episode -->
+                <div class="spotify-embed-container">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/3c6KAQPQ54vxXUvLLRffC1?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Tech Break by Friday Spotify Podcast Player"></iframe>
+                </div>
+
+                <!-- Apple Podcasts Embed -->
+                <div class="apple-embed-container">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:800px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/gr/podcast/tech-break-by-friday/id1796711716" title="Tech Break by Friday Apple Podcasts Player" loading="lazy"></iframe>
+                </div>
+
+                <!-- Substack Embed -->
+                <div class="substack-embed-container">
+                    <iframe src="https://kivroglouparaskevi.substack.com/embed" width="100%" height="320" style="border:1px solid #333; background:white;" frameborder="0" scrolling="no" title="Tech Break by Friday Substack Player" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
@@ -282,7 +286,11 @@
                         </div>
                     </div>
                     <div class="host-image">
-                        <img src="photos/ME.jpg" alt="Paraskevi Kivroglou - Podcast Host" class="host-photo">
+                        <picture>
+                            <source srcset="/photos/ME.webp" type="image/webp">
+                            <source srcset="/photos/ME.jpg" type="image/jpeg">
+                            <img src="/photos/ME.jpg" alt="Paraskevi Kivroglou - Podcast Host" class="host-photo" loading="lazy" width="400" height="400" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -295,7 +303,7 @@
                     <h2>📬 Stay Updated</h2>
                     <p>Get notified when new episodes drop and receive exclusive tech insights delivered to your inbox.</p>
                     <div class="newsletter-form">
-                        <a href="https://paraskevikivroglou.substack.com" class="button button-large">
+                        <a href="https://paraskevikivroglou.substack.com" class="button button-large" target="_blank" rel="noopener noreferrer">
                             📧 Subscribe to Newsletter
                         </a>
                     </div>
@@ -307,9 +315,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikiv?s=11" aria-label="X Profile">
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/paraskevikiv?s=11" aria-label="X Profile" rel="noopener noreferrer">
                     <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
                     </svg>
@@ -319,44 +327,8 @@
         </div>
     </footer>
 
-    <script src="podcast.js"></script>
-    
-    <!-- Podcast Animations Script -->
-
-    
-    <!-- Mobile Menu JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-
-            mobileMenuToggle.addEventListener('click', function() {
-                // Toggle mobile menu
-                navLinks.classList.toggle('mobile-open');
-                mobileMenuToggle.classList.toggle('active');
-                body.classList.toggle('menu-open');
-            });
-
-            // Close menu when clicking on a link
-            const navItems = document.querySelectorAll('.nav-links a');
-            navItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.navbar')) {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                }
-            });
-        });
-    </script>
+    <script src="podcast.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="visuals.js" defer></script>
 </body>
 </html> 

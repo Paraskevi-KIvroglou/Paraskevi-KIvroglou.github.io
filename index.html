@@ -10,6 +10,14 @@
     <meta name="description" content="Transform your business with AI automation. Paraskevi Kivroglou delivers custom AI solutions, machine learning systems, and automation tools that save 10+ hours per week. Expert software development and AI consulting.">
     <meta name="keywords" content="AI automation, machine learning, software development, business automation, AI consultant, Python developer, automation expert, AI solutions, business transformation, process automation">
     <meta name="author" content="Paraskevi Kivroglou">
+
+    <!-- Performance & Security -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cs.iubenda.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer-policy" content="strict-origin-when-cross-origin">
+
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
@@ -90,8 +98,7 @@
         <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async>
     </script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="media-favicon/apple-icon-57x57.png">
@@ -160,7 +167,11 @@
             <div class="container">
                 <h1>Professional Software Development & AI Solutions</h1>
                 <div class="about-content">
-                    <img src="photos/ME.jpg" alt="Paraskevi Kivroglou" class="profile-img">
+                    <picture>
+                        <source srcset="/photos/ME.webp" type="image/webp">
+                        <source srcset="/photos/ME.jpg" type="image/jpeg">
+                        <img src="/photos/ME.jpg" alt="Paraskevi Kivroglou" class="profile-img" width="220" height="220" decoding="async">
+                    </picture>
                     <div class="about-text">
                         <h2><span class="emoji">👋</span> Hi, I'm Paraskevi</h2>
                         <p>I help <strong>5-6 figure business owners</strong> break free from operational bottlenecks that are killing their growth.</p>
@@ -208,20 +219,20 @@
                         <h3><i class="fas fa-microchip"></i> AI Hotel Booking Assistant</h3>
                         <p>Developed a Llama 2-based AI assistant using Docker, and HuggingFace, 
                            demonstrating practical applications of NLP in the hospitality sector.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App" class="button">View Project</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Deploy-Hotel-Booking-App" class="button" rel="noopener noreferrer" target="_blank">View Project</a>
                     </div>
                     <div class="project-card">
                         <h3><i class="fas fa-cogs"></i> Pong AI with Deep Q-Learning</h3>
                         <p>Implemented neural networks for game AI using PyTorch, showcasing advanced 
                            reinforcement learning techniques.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/rl-pong-agent" class="button">View Project</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/rl-pong-agent" class="button" rel="noopener noreferrer" target="_blank">View Project</a>
                     </div>
                     <div class="project-card">
                         <h3><i class="fas fa-database"></i> Finance RAG Implementation</h3>
                         <p>Built a Retrieval Augmented Generation system for financial due diligence using 
                            GEMMA and Llama models. Features include data cleaning, embedding generation, 
                            vector search, and intelligent query handling with MongoDB integration.</p>
-                        <a href="https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation" class="button">View Project</a>
+                        <a href="https://github.com/Paraskevi-KIvroglou/Finance_RAG_Implementation" class="button" rel="noopener noreferrer" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="view-all-container">
@@ -295,12 +306,17 @@
         </section>
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" class="back-to-top-btn" title="Go to top" aria-label="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile">
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile" rel="noopener noreferrer">
                     <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
                     </svg>
@@ -310,41 +326,7 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
-    
-    <!-- Mobile Menu JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-
-            mobileMenuToggle.addEventListener('click', function() {
-                // Toggle mobile menu
-                navLinks.classList.toggle('mobile-open');
-                mobileMenuToggle.classList.toggle('active');
-                body.classList.toggle('menu-open');
-            });
-
-            // Close menu when clicking on a link
-            const navItems = document.querySelectorAll('.nav-links a');
-            navItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.navbar')) {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                }
-            });
-        });
-    </script>
+    <script src="index.js" defer></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
