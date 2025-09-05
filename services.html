@@ -6,6 +6,14 @@
     <meta name="description" content="Professional AI and software development services by Paraskevi Kivroglou. Offering AI consulting, software development, and technical training with expertise in machine learning and full-stack development.">
     <meta name="keywords" content="AI Services, Software Development, Machine Learning Consulting, Technical Training, Full Stack Development">
     <meta name="author" content="Paraskevi Kivroglou">
+
+    <!-- Performance & Security -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cs.iubenda.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer-policy" content="strict-origin-when-cross-origin">
+
     <title>Professional Services | Paraskevi Kivroglou</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEKR0ZTPH3"></script>
@@ -25,8 +33,7 @@
         <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async>
     </script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="media-favicon/apple-icon-57x57.png">
@@ -114,7 +121,7 @@
     
     <link rel="preload" href="styles.css" as="style">
 </head>
-<body>
+<body data-visuals="true">
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-brand-link">
@@ -180,9 +187,9 @@
                                     <div class="service-editorial-label">Outcomes</div>
                                     <div class="service-editorial-desc">Walk away with fresh insights, a step-by-step roadmap, and a working AI automation—no guesswork, just actionable results.</div>
                                 </div>
-                                <a href="#" class="button editorial-cta" onclick="redirectToBooking('consultation')">Start Here</a>
+                                <button class="button editorial-cta" data-booking-type="consultation">Start Here</button>
                             </div>
-                            <div class="service-editorial-visual">
+                            <div class="service-editorial-visual" aria-hidden="true">
                                 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
                                         <radialGradient id="sparkGlow" cx="50%" cy="50%" r="50%">
@@ -255,7 +262,7 @@
                     <!-- AI Launchpad Solution -->
                     <section class="service-section editorial">
                         <div class="service-editorial-grid launchpad-reverse">
-                            <div class="service-editorial-visual">
+                            <div class="service-editorial-visual" aria-hidden="true">
                                 <!-- Rocket trajectory/arc SVG -->
                                 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
@@ -293,7 +300,7 @@
                                     <div class="service-editorial-label">Outcomes</div>
                                     <div class="service-editorial-desc">Go live in 30 days with a custom AI app, automated workflows, and analytics dashboard—plus a 30-day satisfaction guarantee.</div>
                                 </div>
-                                <a href="#" class="button editorial-cta" onclick="redirectToBooking('consultation')">Book Your Launchpad</a>
+                                <button class="button editorial-cta" data-booking-type="consultation">Book Your Launchpad</button>
                             </div>
                         </div>
                     </section>
@@ -311,9 +318,9 @@
                                     <div class="service-editorial-label">Outcomes</div>
                                     <div class="service-editorial-desc">Continuous improvement, new features every month, and actionable analytics—plus priority support and quarterly innovation workshops.</div>
                                 </div>
-                                <a href="#" class="button editorial-cta" onclick="redirectToBooking('consultation')">Accelerate My Growth</a>
+                                <button class="button editorial-cta" data-booking-type="consultation">Accelerate My Growth</button>
                             </div>
-                            <div class="service-editorial-visual">
+                            <div class="service-editorial-visual" aria-hidden="true">
                                 <!-- Wave/spiral/circular SVG motif -->
                                 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
@@ -399,7 +406,7 @@
                         
                         <div class="hook-cta">
                             <p>Ready to save 20+ hours per week?</p>
-                            <a href="#" class="button button-large" onclick="redirectToBooking('consultation')">Get Your Free Automation Audit</a>
+                            <button class="button button-large editorial-cta" data-booking-type="consultation">Get Your Free Automation Audit</button>
                         </div>
                     </div>
                 </div>
@@ -447,8 +454,8 @@
                     
                     <!-- Go High Level inline calendar widget -->
                     <iframe src="https://api.leadconnectorhq.com/widget/booking/KnLhETWeXcsKQXRLkNI6" 
-                        style="width: 100%;border:none;overflow: hidden;" scrolling="no" 
-                        id="KnLhETWeXcsKQXRLkNI6_1743115234972"></iframe><br>
+                        style="width: 100%;border:none;overflow: hidden;" scrolling="no"
+                        id="KnLhETWeXcsKQXRLkNI6_1743115234972" title="Booking Calendar for Consultation"></iframe><br>
                     <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
                 </div>
                 
@@ -485,9 +492,9 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile">
+                <a href="https://github.com/Paraskevi-KIvroglou" aria-label="GitHub Profile" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/paraskevi-kivroglou-925881292/" aria-label="LinkedIn Profile" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/paraskevikivro?s=11" aria-label="X Profile" rel="noopener noreferrer">
                     <svg class="x-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" fill="#e0e0e0"/>
                     </svg>
@@ -498,40 +505,7 @@
     </footer>
     
     <script src="services.js" defer></script>
-    
-    <!-- Mobile Menu JavaScript -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-            const navLinks = document.querySelector('.nav-links');
-            const body = document.body;
-
-            mobileMenuToggle.addEventListener('click', function() {
-                // Toggle mobile menu
-                navLinks.classList.toggle('mobile-open');
-                mobileMenuToggle.classList.toggle('active');
-                body.classList.toggle('menu-open');
-            });
-
-            // Close menu when clicking on a link
-            const navItems = document.querySelectorAll('.nav-links a');
-            navItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.navbar')) {
-                    navLinks.classList.remove('mobile-open');
-                    mobileMenuToggle.classList.remove('active');
-                    body.classList.remove('menu-open');
-                }
-            });
-        });
-    </script>
+    <script src="main.js" defer></script>
+    <script src="visuals.js" defer></script>
 </body>
 </html> 
