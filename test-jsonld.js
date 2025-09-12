@@ -42,6 +42,25 @@ if (match) {
                 }
                 if (event.offers) {
                     console.log(`✅ offers: ${event.offers.price} ${event.offers.priceCurrency}`);
+                    if (event.offers.url) {
+                        console.log(`✅ offers URL: ${event.offers.url}`);
+                    } else {
+                        console.log(`⚠️ offers missing URL field (recommended)`);
+                    }
+                    if (event.offers.validFrom) {
+                        console.log(`✅ offers validFrom: ${event.offers.validFrom}`);
+                    } else {
+                        console.log(`⚠️ offers missing validFrom field (recommended)`);
+                    }
+                }
+                
+                // Check organizer URL
+                if (event.organizer) {
+                    if (event.organizer.url) {
+                        console.log(`✅ organizer URL: ${event.organizer.url}`);
+                    } else {
+                        console.log(`⚠️ organizer missing URL field (recommended)`);
+                    }
                 }
             });
         } else {
