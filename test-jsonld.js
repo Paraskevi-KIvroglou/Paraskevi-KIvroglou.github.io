@@ -42,10 +42,73 @@ if (match) {
                 }
                 if (event.offers) {
                     console.log(`✅ offers: ${event.offers.price} ${event.offers.priceCurrency}`);
+                    if (event.offers.url) {
+                        console.log(`✅ offers URL: ${event.offers.url}`);
+                    } else {
+                        console.log(`⚠️ offers missing URL field (recommended)`);
+                    }
+                    if (event.offers.validFrom) {
+                        console.log(`✅ offers validFrom: ${event.offers.validFrom}`);
+                    } else {
+                        console.log(`⚠️ offers missing validFrom field (recommended)`);
+                    }
+                }
+                
+                // Check organizer URL
+                if (event.organizer) {
+                    if (event.organizer.url) {
+                        console.log(`✅ organizer URL: ${event.organizer.url}`);
+                    } else {
+                        console.log(`⚠️ organizer missing URL field (recommended)`);
+                    }
                 }
             });
         } else {
             console.log('❌ No performerIn array found');
+        }
+        
+        // Check for Service schema with reviews
+        if (jsonLd['@type'] === 'Service' && jsonLd.reviews && Array.isArray(jsonLd.reviews)) {
+            console.log(`\n--- Service Reviews Validation ---`);
+            console.log(`✅ Found ${jsonLd.reviews.length} reviews in reviews array`);
+            
+            jsonLd.reviews.forEach((review, index) => {
+                console.log(`\n--- Review ${index + 1} ---`);
+                
+                // Check required fields for Review
+                const requiredReviewFields = ['reviewBody', 'author'];
+                const missingReviewFields = requiredReviewFields.filter(field => !review[field]);
+                
+                if (missingReviewFields.length === 0) {
+                    console.log('✅ All required review fields present');
+                } else {
+                    console.log(`❌ Missing required review fields: ${missingReviewFields.join(', ')}`);
+                }
+                
+                // Check reviewRating structure
+                if (review.reviewRating) {
+                    if (review.reviewRating['@type'] === 'Rating' && 
+                        review.reviewRating.ratingValue && 
+                        review.reviewRating.bestRating) {
+                        console.log(`✅ Review rating properly structured: ${review.reviewRating.ratingValue}/${review.reviewRating.bestRating}`);
+                    } else {
+                        console.log('❌ Review rating structure is invalid');
+                    }
+                } else {
+                    console.log('⚠️ No review rating found (optional but recommended)');
+                }
+                
+                // Validate author structure
+                if (review.author) {
+                    if (review.author['@type'] === 'Person' && review.author.name) {
+                        console.log(`✅ Review author properly structured: ${review.author.name}`);
+                    } else {
+                        console.log('❌ Review author structure is invalid');
+                    }
+                }
+            });
+        } else if (jsonLd['@type'] === 'Service') {
+            console.log('⚠️ Service found but no reviews array present');
         }
         
     } catch (e) {
