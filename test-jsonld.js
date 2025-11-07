@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-// Read the speaking.html file
-const content = fs.readFileSync('speaking.html', 'utf8');
+// Read the services.html file
+const content = fs.readFileSync('services.html', 'utf8');
 
 // Extract JSON-LD content
 const match = content.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
